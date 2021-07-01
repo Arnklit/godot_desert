@@ -1,0 +1,6 @@
+[gd_resource type="ProceduralSky" format=2]
+
+[resource]
+ground_bottom_color = Color( 0.839216, 0.572549, 0.376471, 1 )
+ground_horizon_color = Color( 0.792157, 0.709804, 0.654902, 1 )
+ground_curve = 0.0672719

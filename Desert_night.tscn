@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Desert.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Desert_night.lmbake" type="BakedLightmapData" id=2]
+[ext_resource path="res://assets/Environment_settings_evening.tres" type="Environment" id=3]
+
+[node name="Desert" instance=ExtResource( 1 )]
+
+[node name="Sun" parent="." index="0"]
+transform = Transform( -0.922842, 0.378707, 0.0703052, 0.0112438, 0.208935, -0.977865, -0.385013, -0.901625, -0.197072, 0, 30, 0 )
+
+[node name="Sun_Orientation" parent="Sun" index="0"]
+light_color = Color( 1, 0.678431, 0.521569, 1 )
+
+[node name="WorldEnvironment" parent="." index="9"]
+environment = ExtResource( 3 )
+
+[node name="BakedLightmap" parent="." index="10"]
+light_data = ExtResource( 2 )

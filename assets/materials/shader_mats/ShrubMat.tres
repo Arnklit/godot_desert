@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=2]
+
+[ext_resource path="res://assets/textures/shrub/Shrub_normal.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/shrub/Shrub_albedo.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/shrub/Shrub_orm.png" type="Texture" id=3]
+[ext_resource path="res://assets/textures/shrub/Shrub_transmission.png" type="Texture" id=4]
+[ext_resource path="res://assets/shaders/shrub.shader" type="Shader" id=5]
+
+[resource]
+shader = ExtResource( 5 )
+shader_param/albedo = Color( 1, 1, 1, 1 )
+shader_param/specular = 0.0
+shader_param/alpha_scissor_threshold = 0.734
+shader_param/roughness = 1.0
+shader_param/occlusion_texture_channel = Plane( 1, 0, 0, 0 )
+shader_param/roughness_texture_channel = Plane( 0, 1, 0, 0 )
+shader_param/normal_scale = 1.0
+shader_param/transmission = Color( 0.227451, 0.227451, 0.227451, 1 )
+shader_param/hue_randomness = 0.175
+shader_param/value_randomness = 0.057
+shader_param/ambient_wind = 0.025
+shader_param/texture_albedo = ExtResource( 2 )
+shader_param/texture_occlusion = ExtResource( 3 )
+shader_param/texture_normal = ExtResource( 1 )
+shader_param/texture_transmission = ExtResource( 4 )

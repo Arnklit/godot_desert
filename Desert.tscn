@@ -1,0 +1,784 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/models/Desert.gltf" type="PackedScene" id=1]
+[ext_resource path="res://assets/Environment_settings_day.tres" type="Environment" id=2]
+[ext_resource path="res://assets/materials/standard_mats/RocksMat.material" type="Material" id=3]
+[ext_resource path="res://assets/materials/standard_mats/RockpileMat.material" type="Material" id=4]
+[ext_resource path="res://assets/materials/shader_mats/Boulder_blend.tres" type="Material" id=5]
+[ext_resource path="res://assets/materials/shader_mats/TerrainVisualise.tres" type="Material" id=6]
+[ext_resource path="res://assets/materials/shader_mats/Rockface_blend.tres" type="Material" id=7]
+[ext_resource path="res://assets/materials/shader_mats/ShrubMat.tres" type="Material" id=8]
+[ext_resource path="res://assets/materials/shader_mats/FlatBoulder_blend.tres" type="Material" id=9]
+[ext_resource path="res://assets/materials/shader_mats/TriplanarGround.tres" type="Material" id=10]
+[ext_resource path="res://Desert_daytime.lmbake" type="BakedLightmapData" id=11]
+
+[node name="Desert" instance=ExtResource( 1 )]
+
+[node name="Sun_Orientation" parent="Sun" index="0"]
+light_color = Color( 1, 0.933333, 0.886275, 1 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_normal_bias = 0.4
+
+[node name="Ground" parent="." index="1"]
+material/0 = ExtResource( 10 )
+
+[node name="TerrainCalculator" parent="." index="2"]
+visible = false
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 6 )
+
+[node name="Boulder" parent="Boulders" index="0"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder001" parent="Boulders" index="1"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder002" parent="Boulders" index="2"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder003" parent="Boulders" index="3"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder004" parent="Boulders" index="4"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder005" parent="Boulders" index="5"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder006" parent="Boulders" index="6"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder007" parent="Boulders" index="7"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder008" parent="Boulders" index="8"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder009" parent="Boulders" index="9"]
+material/0 = ExtResource( 5 )
+
+[node name="Boulder010" parent="Boulders" index="10"]
+material/0 = ExtResource( 5 )
+
+[node name="Rockface" parent="RockFaces" index="0"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface001" parent="RockFaces" index="1"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface002" parent="RockFaces" index="2"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface003" parent="RockFaces" index="3"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface004" parent="RockFaces" index="4"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface005" parent="RockFaces" index="5"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface006" parent="RockFaces" index="6"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface007" parent="RockFaces" index="7"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface008" parent="RockFaces" index="8"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface009" parent="RockFaces" index="9"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface010" parent="RockFaces" index="10"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface011" parent="RockFaces" index="11"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface012" parent="RockFaces" index="12"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface013" parent="RockFaces" index="13"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface014" parent="RockFaces" index="14"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface015" parent="RockFaces" index="15"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface016" parent="RockFaces" index="16"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface017" parent="RockFaces" index="17"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface018" parent="RockFaces" index="18"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface019" parent="RockFaces" index="19"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface020" parent="RockFaces" index="20"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface021" parent="RockFaces" index="21"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface022" parent="RockFaces" index="22"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface023" parent="RockFaces" index="23"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface024" parent="RockFaces" index="24"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface025" parent="RockFaces" index="25"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface026" parent="RockFaces" index="26"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface027" parent="RockFaces" index="27"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface028" parent="RockFaces" index="28"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface029" parent="RockFaces" index="29"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface030" parent="RockFaces" index="30"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface031" parent="RockFaces" index="31"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface032" parent="RockFaces" index="32"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface033" parent="RockFaces" index="33"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface034" parent="RockFaces" index="34"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface035" parent="RockFaces" index="35"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface036" parent="RockFaces" index="36"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface037" parent="RockFaces" index="37"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface038" parent="RockFaces" index="38"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface039" parent="RockFaces" index="39"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface040" parent="RockFaces" index="40"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface041" parent="RockFaces" index="41"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface042" parent="RockFaces" index="42"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface043" parent="RockFaces" index="43"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface044" parent="RockFaces" index="44"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface045" parent="RockFaces" index="45"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface046" parent="RockFaces" index="46"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface047" parent="RockFaces" index="47"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface048" parent="RockFaces" index="48"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface049" parent="RockFaces" index="49"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface050" parent="RockFaces" index="50"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface051" parent="RockFaces" index="51"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface052" parent="RockFaces" index="52"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface053" parent="RockFaces" index="53"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface054" parent="RockFaces" index="54"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface055" parent="RockFaces" index="55"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface056" parent="RockFaces" index="56"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface057" parent="RockFaces" index="57"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface058" parent="RockFaces" index="58"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface059" parent="RockFaces" index="59"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface060" parent="RockFaces" index="60"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface061" parent="RockFaces" index="61"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface062" parent="RockFaces" index="62"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface063" parent="RockFaces" index="63"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface064" parent="RockFaces" index="64"]
+material/0 = ExtResource( 7 )
+
+[node name="Rockface065" parent="RockFaces" index="65"]
+material/0 = ExtResource( 7 )
+
+[node name="FlatBoulder" parent="FlatBoulders" index="0"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder001" parent="FlatBoulders" index="1"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder002" parent="FlatBoulders" index="2"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder003" parent="FlatBoulders" index="3"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder004" parent="FlatBoulders" index="4"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder005" parent="FlatBoulders" index="5"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder006" parent="FlatBoulders" index="6"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder007" parent="FlatBoulders" index="7"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder008" parent="FlatBoulders" index="8"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder009" parent="FlatBoulders" index="9"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder010" parent="FlatBoulders" index="10"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder011" parent="FlatBoulders" index="11"]
+transform = Transform( -0.686746, 0.000176475, -0.623139, -0.0374558, 0.925631, 0.0415413, 0.622012, 0.0559338, -0.685488, -9.56918, 8.02295, 8.76196 )
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder012" parent="FlatBoulders" index="12"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder013" parent="FlatBoulders" index="13"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder014" parent="FlatBoulders" index="14"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder015" parent="FlatBoulders" index="15"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder016" parent="FlatBoulders" index="16"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder017" parent="FlatBoulders" index="17"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder018" parent="FlatBoulders" index="18"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder019" parent="FlatBoulders" index="19"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder020" parent="FlatBoulders" index="20"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder021" parent="FlatBoulders" index="21"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder022" parent="FlatBoulders" index="22"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder023" parent="FlatBoulders" index="23"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder024" parent="FlatBoulders" index="24"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder025" parent="FlatBoulders" index="25"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder026" parent="FlatBoulders" index="26"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder027" parent="FlatBoulders" index="27"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder028" parent="FlatBoulders" index="28"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder029" parent="FlatBoulders" index="29"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder030" parent="FlatBoulders" index="30"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder031" parent="FlatBoulders" index="31"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder032" parent="FlatBoulders" index="32"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder033" parent="FlatBoulders" index="33"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder034" parent="FlatBoulders" index="34"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder035" parent="FlatBoulders" index="35"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder036" parent="FlatBoulders" index="36"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder037" parent="FlatBoulders" index="37"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder038" parent="FlatBoulders" index="38"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder039" parent="FlatBoulders" index="39"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder040" parent="FlatBoulders" index="40"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder041" parent="FlatBoulders" index="41"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder042" parent="FlatBoulders" index="42"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder043" parent="FlatBoulders" index="43"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder044" parent="FlatBoulders" index="44"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder045" parent="FlatBoulders" index="45"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder046" parent="FlatBoulders" index="46"]
+transform = Transform( 0.0251444, 0.0586569, -1.05908, -0.0407025, -1.05855, -0.0595936, -1.05993, 0.0420411, -0.022836, -16.2307, 13.8003, -9.49232 )
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder047" parent="FlatBoulders" index="47"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder048" parent="FlatBoulders" index="48"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder049" parent="FlatBoulders" index="49"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder050" parent="FlatBoulders" index="50"]
+material/0 = ExtResource( 9 )
+
+[node name="FlatBoulder051" parent="FlatBoulders" index="51"]
+material/0 = ExtResource( 9 )
+
+[node name="RockPile" parent="RockPiles" index="0"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile001" parent="RockPiles" index="1"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile002" parent="RockPiles" index="2"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile003" parent="RockPiles" index="3"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile004" parent="RockPiles" index="4"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile005" parent="RockPiles" index="5"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile006" parent="RockPiles" index="6"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile007" parent="RockPiles" index="7"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile008" parent="RockPiles" index="8"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile009" parent="RockPiles" index="9"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile010" parent="RockPiles" index="10"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile011" parent="RockPiles" index="11"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile012" parent="RockPiles" index="12"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile013" parent="RockPiles" index="13"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile014" parent="RockPiles" index="14"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile015" parent="RockPiles" index="15"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile016" parent="RockPiles" index="16"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile017" parent="RockPiles" index="17"]
+material/0 = ExtResource( 4 )
+
+[node name="RockPile018" parent="RockPiles" index="18"]
+material/0 = ExtResource( 4 )
+
+[node name="Rock001" parent="Rocks" index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock002" parent="Rocks" index="1"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock003" parent="Rocks" index="2"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock004" parent="Rocks" index="3"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock005" parent="Rocks" index="4"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock006" parent="Rocks" index="5"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock007" parent="Rocks" index="6"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock009" parent="Rocks" index="7"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock010" parent="Rocks" index="8"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock008" parent="Rocks" index="9"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock011" parent="Rocks" index="10"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock012" parent="Rocks" index="11"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock013" parent="Rocks" index="12"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock014" parent="Rocks" index="13"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock015" parent="Rocks" index="14"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock016" parent="Rocks" index="15"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock017" parent="Rocks" index="16"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock018" parent="Rocks" index="17"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock019" parent="Rocks" index="18"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock020" parent="Rocks" index="19"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock021" parent="Rocks" index="20"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock022" parent="Rocks" index="21"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock023" parent="Rocks" index="22"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock024" parent="Rocks" index="23"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock025" parent="Rocks" index="24"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock026" parent="Rocks" index="25"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock027" parent="Rocks" index="26"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock028" parent="Rocks" index="27"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock029" parent="Rocks" index="28"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock030" parent="Rocks" index="29"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock031" parent="Rocks" index="30"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock032" parent="Rocks" index="31"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock033" parent="Rocks" index="32"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock034" parent="Rocks" index="33"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock035" parent="Rocks" index="34"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock036" parent="Rocks" index="35"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock037" parent="Rocks" index="36"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock038" parent="Rocks" index="37"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock039" parent="Rocks" index="38"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock040" parent="Rocks" index="39"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock041" parent="Rocks" index="40"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock042" parent="Rocks" index="41"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock043" parent="Rocks" index="42"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock044" parent="Rocks" index="43"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock045" parent="Rocks" index="44"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock046" parent="Rocks" index="45"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock047" parent="Rocks" index="46"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock048" parent="Rocks" index="47"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock049" parent="Rocks" index="48"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock050" parent="Rocks" index="49"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock051" parent="Rocks" index="50"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock052" parent="Rocks" index="51"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock053" parent="Rocks" index="52"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock054" parent="Rocks" index="53"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock055" parent="Rocks" index="54"]
+material/0 = ExtResource( 3 )
+
+[node name="Rock056" parent="Rocks" index="55"]
+material/0 = ExtResource( 3 )
+
+[node name="Shrub" parent="Shrubs" index="0"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub001" parent="Shrubs" index="1"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub002" parent="Shrubs" index="2"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub003" parent="Shrubs" index="3"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub004" parent="Shrubs" index="4"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub005" parent="Shrubs" index="5"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub006" parent="Shrubs" index="6"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub007" parent="Shrubs" index="7"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub008" parent="Shrubs" index="8"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub009" parent="Shrubs" index="9"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub010" parent="Shrubs" index="10"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub011" parent="Shrubs" index="11"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub012" parent="Shrubs" index="12"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub013" parent="Shrubs" index="13"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub014" parent="Shrubs" index="14"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub015" parent="Shrubs" index="15"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub016" parent="Shrubs" index="16"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub017" parent="Shrubs" index="17"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub018" parent="Shrubs" index="18"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub019" parent="Shrubs" index="19"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub020" parent="Shrubs" index="20"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub021" parent="Shrubs" index="21"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub022" parent="Shrubs" index="22"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub023" parent="Shrubs" index="23"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub024" parent="Shrubs" index="24"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="Shrub025" parent="Shrubs" index="25"]
+use_in_baked_light = false
+generate_lightmap = false
+material/0 = ExtResource( 8 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="9"]
+environment = ExtResource( 2 )
+
+[node name="BakedLightmap" type="BakedLightmap" parent="." index="10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0 )
+extents = Vector3( 22, 10, 22 )
+light_data = ExtResource( 11 )
