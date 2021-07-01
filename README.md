@@ -2,6 +2,8 @@
 
 A scene to test Godot's 3D capabilities. The scene was made using Godot 3.3.2.Stable.
 
+![Thumbnail](https://user-images.githubusercontent.com/4955051/124104161-e7c00e00-da59-11eb-8348-aadee671447c.jpg)
+
 License
 -------
 * This Godot Project is available under the MIT licence. See LICENSE.MD for details.
